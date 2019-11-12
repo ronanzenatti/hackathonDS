@@ -128,84 +128,41 @@ return [
     */
 
     'menu' => [
+        ['header' => 'Menu'],
         [
-            'text' => 'search',
-            'search' => true,
-        ],
-        ['header' => 'main_navigation'],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'text'        => 'Home',
+            'url'         => '/home',
+            'icon'        => 'fas fa-home',
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
+            'text'        => 'Cursos',
+            'url'         => '/curso',
             'icon'        => 'far fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'text'        => 'Inscrições',
+            'url'         => '/inscricao',
+            'icon'        => 'fas fa-address-card',
         ],
         [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
+            'text'        => 'Grupos',
+            'url'         => '/grupo',
+            'icon'        => 'fas fa-user-friends',
         ],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
+            'text'        => 'Projetos',
+            'url'         => '/projeto',
+            'icon'        => 'fas fa-project-diagram',
         ],
         [
-            'text'       => 'information',
-            'icon_color' => 'aqua',
+            'text'        => 'Eventos',
+            'url'         => '/evento',
+            'icon'        => 'far fa-calendar-alt',
+        ],
+        [
+            'text'        => 'Administradores',
+            'url'         => '/home',
+            'icon'        => 'fas fa-user-cog',
         ],
     ],
 
