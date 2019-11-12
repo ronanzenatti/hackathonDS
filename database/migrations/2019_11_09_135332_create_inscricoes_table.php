@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateIncricoesTable extends Migration
+class CreateInscricoesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreateIncricoesTable extends Migration
      */
     public function up()
     {
-        Schema::create('incricoes', function (Blueprint $table) {
+        Schema::create('inscricoes', function (Blueprint $table) {
             $table->bigIncrements('id_inscricao')->unsigned();
 
-            $table->bigInteger('evento_id');
+            $table->bigInteger('evento_id')->unsigned();
             $table->foreign('evento_id')->references('id_evento')->on('eventos');
 
-            $table->bigInteger('participante_id');
+            $table->bigInteger('participante_id')->unsigned();
             $table->foreign('participante_id')->references('id_participante')->on('participantes');
 
             $table->dateTime('data_hora');
