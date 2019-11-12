@@ -14,9 +14,15 @@ class CreateCursosParticipantesTable extends Migration
     public function up()
     {
         Schema::create('cursos_participantes', function (Blueprint $table) {
+            $table->bigIncrements('id_curso_participante');
+
             $table->bigInteger('curso_id')->unsigned();
+            $table->foreign('curso_id')->references('id_curso')->on('cursos');
+
             $table->bigInteger('participante_id')->unsigned();
-            $table->smallInteger('grau_serie');
+            $table->foreign('participante_id')->references('id_participante')->on('participantes');
+
+            $table->smallInteger('grau_serie')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

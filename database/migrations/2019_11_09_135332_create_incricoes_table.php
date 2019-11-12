@@ -15,8 +15,14 @@ class CreateIncricoesTable extends Migration
     {
         Schema::create('incricoes', function (Blueprint $table) {
             $table->bigIncrements('id_inscricao')->unsigned();
+
             $table->bigInteger('evento_id');
-            $table->bigInteger('inscricao_id');
+            $table->foreign('evento_id')->references('id_evento')->on('eventos');
+
+            $table->bigInteger('participante_id');
+            $table->foreign('participante_id')->references('id_participante')->on('participantes');
+
+            $table->dateTime('data_hora');
             $table->timestamps();
             $table->softDeletes();
         });

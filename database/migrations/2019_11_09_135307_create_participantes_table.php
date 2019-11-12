@@ -21,7 +21,7 @@ class CreateParticipantesTable extends Migration
             $table->string('rg', 20);
             $table->date('data_nascimento');
             $table->char('sexo', 1);
-            $table->string('celular', 20)->nullable();
+            $table->string('celular', 20);
             $table->string('email')->unique();
             $table->string('senha');
             $table->timestamps();

@@ -14,9 +14,16 @@ class CreateGruposIncricoesTable extends Migration
     public function up()
     {
         Schema::create('grupos_incricoes', function (Blueprint $table) {
-            $table->bigInteger('grupo_id');
-            $table->bigInteger('inscricao_id');
+            $table->bigIncrements('id_grupo_inscricao')->unsigned();
+
+            $table->bigInteger('grupo_id')->unsigned();
+            $table->foreign('grupo_id')->references('id_grupo')->on('grupos');
+
+            $table->bigInteger('inscricao_id')->unsigned();
+            $table->foreign('inscricao_id')->references('id_inscricao')->on('inscricoes');
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -17,6 +17,7 @@ class CreateGruposTable extends Migration
             $table->bigIncrements('id_grupo')->unsigned();
             $table->string('nome');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
