@@ -19,6 +19,9 @@ class CreateInscricoesTable extends Migration
             $table->bigInteger('evento_id')->unsigned();
             $table->foreign('evento_id')->references('id_evento')->on('eventos');
 
+            $table->bigInteger('grupo_id')->unsigned()->nullable();
+            $table->foreign('grupo_id')->references('id_grupo')->on('grupos');
+
             $table->bigInteger('participante_id')->unsigned();
             $table->foreign('participante_id')->references('id_participante')->on('participantes');
 
