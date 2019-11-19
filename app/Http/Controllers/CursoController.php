@@ -8,6 +8,6 @@ class CursoController extends Controller
 {
     public function index()
     {
-        return view('home.curso.index');
+        return view('curso.index');
     }
 }

@@ -8,6 +8,6 @@ class GrupoController extends Controller
 {
     public function index()
     {
-        return view('home.grupo.index');
+        return view('grupo.index');
     }
 }

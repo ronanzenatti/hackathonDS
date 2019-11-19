@@ -8,6 +8,6 @@ class ProjetoController extends Controller
 {
     public function index()
     {
-        return view('home.projeto.index');
+        return view('projeto.index');
     }
 }
