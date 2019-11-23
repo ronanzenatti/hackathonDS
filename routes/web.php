@@ -17,9 +17,10 @@ Route::group(['middleware' => ['auth']], function() {
 
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index');
+
+Route::get('/sobre', 'AboutController@index');
+
+Route::get('/cronograma', 'ScheduleController@index');
 
 Auth::routes();
-
