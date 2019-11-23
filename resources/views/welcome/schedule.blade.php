@@ -61,7 +61,7 @@
                     </div>
                     <div class="col-md topper d-flex align-items-center justify-content-end">
                         <p class="mb-0">
-                            <a href="#"
+                            <a href="{{ url('/login') }}"
                                class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
                                 <span>ENTRAR</span>
                             </a>
