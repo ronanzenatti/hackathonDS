@@ -159,11 +159,6 @@ return [
             'url'         => '/evento',
             'icon'        => 'far fa-calendar-alt',
         ],
-        [
-            'text'        => 'Administradores',
-            'url'         => '/home',
-            'icon'        => 'fas fa-user-cog',
-        ],
     ],
 
     /*
