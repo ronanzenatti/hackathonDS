@@ -10,4 +10,10 @@ class CursoController extends Controller
     {
         return view('curso.index');
     }
+
+    public function cadastrarCurso()
+    {
+        return view('curso.cadastrar-curso');
+    }
+
 }

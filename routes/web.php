@@ -5,6 +5,8 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/home', 'HomeController@index')->name('home');
     
     Route::get('/curso', 'CursoController@index')->name('curso');
+
+    Route::get('/cadastrar-curso', 'CursoController@cadastrarCurso');
     
     Route::get('/inscricao', 'InscricaoController@index')->name('inscricao');
     
