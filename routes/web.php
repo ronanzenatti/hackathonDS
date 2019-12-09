@@ -1,24 +1,26 @@
 <?php
 
-Route::group(['middleware' => ['auth']], function() {
-    
-    Route::get('/home', 'HomeController@index')->name('home');
-    
-    Route::get('/curso', 'CursoController@index')->name('curso');
 
-    Route::get('/cadastrar-curso', 'CursoController@cadastrarCurso');
-    
-    Route::get('/inscricao', 'InscricaoController@index')->name('inscricao');
-    
-    Route::get('/grupo', 'GrupoController@index')->name('grupo');
-    
-    Route::get('/projeto', 'ProjetoController@index')->name('projeto');
-    
-    Route::get('/evento', 'EventoController@index')->name('evento');
-    
-    Route::resource('ajaxproducts','CursoAjaxController');
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/cursos', 'CursoController@index')->name('curso');
+
+Route::prefix('cursos')->group(function() {
+
+    Route::get('/inserir', 'CursoController@cadastrarCurso');
     
 });
+
+Route::get('/inscricoes', 'InscricaoController@index')->name('inscricao');
+
+Route::get('/grupos', 'GrupoController@index')->name('grupo');
+
+Route::get('/projetos', 'ProjetoController@index')->name('projeto');
+
+Route::get('/eventos', 'EventoController@index')->name('evento');
+
+Route::resource('ajaxproducts','CursoAjaxController');
+    
 
 Route::get('/', 'WelcomeController@index');
 

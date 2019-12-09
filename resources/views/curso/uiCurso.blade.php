@@ -13,7 +13,7 @@
         <div class="box-footer">
             <div class="row">
                 <div class="col-sm-4 text-left">
-                    <a href="{{ url('/curso') }}" class="btn btn-danger">Voltar</a>
+                    <a href="{{ url('/cursos') }}" class="btn btn-danger">Voltar</a>
                 </div>
                 <div class="col-sm-4 text-center">
                     <button type="reset" class="btn btn-warning">Limpar</button>

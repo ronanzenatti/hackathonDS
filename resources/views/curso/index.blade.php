@@ -10,7 +10,7 @@
     <div class="box">
         <div class="box-header">
             <div class="text-right">
-                <a href="{{ url('/cadastrar-curso') }}" class="btn btn-success btn-novo">Novo</a>
+                <a href="{{ url('/cursos/inserir') }}" class="btn btn-success btn-novo">Novo</a>
             </div>
         </div>
         <div class="box-body">

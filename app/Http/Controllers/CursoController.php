@@ -13,7 +13,7 @@ class CursoController extends Controller
 
     public function cadastrarCurso()
     {
-        return view('curso.cadastrar-curso');
+        return view('curso.uiCurso');
     }
 
 }

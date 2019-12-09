@@ -136,27 +136,27 @@ return [
         ],
         [
             'text'        => 'Cursos',
-            'url'         => '/curso',
+            'url'         => '/cursos',
             'icon'        => 'far fa-file',
         ],
         [
             'text'        => 'Inscrições',
-            'url'         => '/inscricao',
+            'url'         => '/inscricoes',
             'icon'        => 'fas fa-address-card',
         ],
         [
             'text'        => 'Grupos',
-            'url'         => '/grupo',
+            'url'         => '/grupos',
             'icon'        => 'fas fa-user-friends',
         ],
         [
             'text'        => 'Projetos',
-            'url'         => '/projeto',
+            'url'         => '/projetos',
             'icon'        => 'fas fa-project-diagram',
         ],
         [
             'text'        => 'Eventos',
-            'url'         => '/evento',
+            'url'         => '/eventos',
             'icon'        => 'far fa-calendar-alt',
         ],
     ],
