@@ -39,7 +39,7 @@
     <div class="container">
         <div class="row no-gutters d-flex align-items-center align-items-stretch">
             <div class="col-md-4 d-flex align-items-center py-4">
-                <a class="navbar-brand" href="{{ url('/') }}">Hackathon <span>Desenvolvimento de Sistemas</span></a>
+                <a class="navbar-brand" href="{{ route('welcome.index') }}">Hackathon <span>Desenvolvimento de Sistemas</span></a>
             </div>
             <div class="col-lg-8 d-block">
                 <div class="row d-flex">
@@ -87,9 +87,9 @@
         </form>
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a href="{{ url('/') }}" class="nav-link pl-0">Home</a></li>
-                <li class="nav-item"><a href="{{ url('/sobre') }}" class="nav-link">Sobre</a></li>
-                <li class="nav-item active"><a href="{{ url('/cronograma') }}" class="nav-link">Programação</a></li>
+                <li class="nav-item"><a href="{{ route('welcome.index') }}" class="nav-link pl-0">Home</a></li>
+                <li class="nav-item"><a href="{{ route('welcome.sobre') }}" class="nav-link">Sobre</a></li>
+                <li class="nav-item active"><a href="{{ route('welcome.cronograma') }}" class="nav-link">Programação</a></li>
                 <!-- <li class="nav-item"><a href="teacher.html" class="nav-link">Organização</a></li>
                 <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contato</a></li> -->
@@ -105,7 +105,7 @@
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
                 <h1 class="mb-2 bread">Programação do Evento</h1>
-                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+                <p class="breadcrumbs"><span class="mr-2"><a href="{{ route('welcome.index') }}">Home <i
                         class="ion-ios-arrow-forward"></i></a></span> <span>Programação <i
                         class="ion-ios-arrow-forward"></i></span></p>
             </div>

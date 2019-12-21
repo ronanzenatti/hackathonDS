@@ -11,4 +11,5 @@ class Curso extends Model
     protected $fillable = ['nome', 'grau_instrucao'];
     protected $primaryKey = 'id_curso';
     protected $table = 'cursos';
+
 }
